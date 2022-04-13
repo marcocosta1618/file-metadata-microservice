@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <title>File Metadata</title>
+   </head>
+
+   <body>
+      <div class="container">
+        <h1>File Metadata Microservice</h1>
+        <p>
+          Please Upload a File ...
+        </p>
+        <div class="view">
+          <h4 id="output"></h4>
+          <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
+            <input id="inputfield" type="file" name="upfile">
+            <input id="button" type="submit" value="Upload">
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <p>Marco Costa 2022. Made with <a target="_blank" href="https://expressjs.com/" 
+        rel="noreferrer">Expressjs</a>. <a target="_blank"
+        href="https://icons8.com/icon/43988/code" rel="noreferrer">Code</a> icon by <a target="_blank"
+        href="https://icons8.com" rel="noreferrer">Icons8</a>.</p> 
+      </footer>
+   </body>
+</html>

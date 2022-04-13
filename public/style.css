@@ -1,0 +1,47 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+html, body {
+   height: 100%;  /* footer on page bottom with flexbox*/
+}
+body {
+   display: flex;
+   flex-direction: column;
+   font-family: 'Open Sans', sans-serif;
+   background-color: #f3f3f3;
+}
+.container {
+   flex: 1 0 auto;
+}
+
+h1 {
+   padding: 0.5em;
+   margin: 2vw;
+   text-align: center;
+   font-size: calc(15px + 2vmin);
+   border-radius: 5px;
+   background-color: lightgreen;
+}
+p {
+   margin: 1.8vh 2vw 2vh;
+   line-height: 200%;
+}
+input {
+   display: block;
+   margin: 2rem auto;
+   padding: 1px 6px;
+}
+footer {
+   flex-shrink: 0;
+   margin: 2vw;
+   padding: 0.5 1rem;
+   text-align: center;
+   font-size: 0.9rem;
+   background-color: #d3d3d3;
+   border-radius: 5px;
+}
+footer p {
+   line-height: 150%;
+}
